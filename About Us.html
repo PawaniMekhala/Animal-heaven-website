@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>About Us</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Baloo Da 2", serif;
+        }
+
+        .image img{
+            width: 100%;
+            height: 0px auto;
+            opacity: 0.9;
+        }
+ 
+        .container2{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            animation: animate 10s ease-in-out infinite;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .outer{
+            /*left: 0;
+            top: 0;*/
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+
+        .details{
+            position: absolute;
+            left: 40%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .details h1{
+            font-size: 5rem;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            font-family: "Baloo Da 2", serif;
+        }
+
+        .details h2 {
+            text-transform: capitalize;
+        }
+
+        .details h2 span:nth-child(1){
+            color: #ABEBC6;
+        }
+
+        @keyframes animate{
+            0%, 100%{
+                background-image: url(images/3.jpg);
+            }
+            25%{
+                background-image: url(images/46.jpg);
+            }
+            50%{
+                background-image: url(images/85.jpg);
+            }
+            75%{
+                background-image: url(images/45.jpg);
+            }
+        }
+        .section-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 7rem 0 10rem 0;
+        }
+
+        .section-heading{
+            font-family: "Mulish", serif;
+            font-size: 5rem;
+            font-weight: 300;
+            color: #4b4b4b;
+            margin-bottom: 4rem;
+        }
+
+        .underline{
+            width: 12rem;
+            height: 0.3rem;
+            background-color: #c29525;
+        }
+
+        .section-text{
+            font-size: 2rem;
+            color: black;
+            font-weight: 700;
+            font-family: "Baloo Da 2", serif;
+            text-align: center;
+        }
+
+        /*.News{
+            background-color: #808B96;
+        }*/
+
+        .AdoptaPet{
+            width: 100%;
+        }
+        .container3{
+            width: 80%;
+            margin: auto;
+        }
+        .title{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .title h1{
+            font-size: 35px;
+            text-transform: capitalize;
+            letter-spacing: 1.5px;
+            color: #eb6234;
+        }
+        .title p{
+            font-size: 18px;
+            font-family: sans-serif;
+            margin: 30px 0px;
+            color: #a3a3a3;
+        }
+        .Tcard{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+        .card1{
+            width: 100%;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .card1:hover{
+            background-color: #f3f3f3;
+            transition: 0.3s;
+        }
+        .image-section img{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+        }
+        .content{
+            width: 100%;
+            text-align: center;
+        }
+        .card1 h3{
+            font-size: 27px;
+            margin-top: 10px;
+            letter-spacing: 1.5px;
+            color: #639ab8;
+        }
+        .card1 h4{
+            font-size: 17px;
+            margin-top: 10px;
+            letter-spacing: 1.5px;
+            color: #6e6e6e;
+        }
+        .card1 p{
+            font-size: 15px;
+            margin: 16px 0px;
+            line-height: 1.5;
+            color: #6c6c6c;
+        }
+        .title button{
+            width: 25rem;
+            height: 5rem;
+            background-color: #76D7C4;
+            border: none;
+            border-radius: 12px;
+            font-family: "Mulish", serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            /*color: #F4D03F;*/
+            /*text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);*/
+            /*box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.4);*/
+            cursor: pointer;
+            /*opacity: 0; */
+        }
+
+        .image img{
+            width: 400px;
+            height: 400px;
+            /*object-fit: cover;
+            position:relative;*/
+            border-radius: 45px;
+            padding-top: 25px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">About Us</a></li>
+            <li><a href="Adopt a Pet.html">Adopt a Pet</a></li>
+            <li><a href="Our Team.html">Our Team</a></li>
+        </ul>
+    </nav>
+    <div class="container2">
+        <div class="outer">
+            <div class="details">
+                <h1>These animals could really use some love.</h1>
+                <h2>
+                    <span><b>Our goal is to find loving, stable homes for the pets in our care. 
+                    Learn more about how you can adopt or foster your new best friend.</b></span>
+                </h2>
+            </div> 
+        </div> 
+    </div>
+    <section class="News">
+        <div class="row">
+            <div class="title">
+                <h1>News & Events</h1>
+            </div>
+        </div>
+        <div class="cards-wrapper">
+                    <div class="card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="images/59.jpg"/>
+                        </div>
+                        <div class="card-info">
+                            <h3>February 2022 Pet of the Month</h3>
+                            <p>Meet Coraline, February's pet of the month! A 2 year old, very loving and playful, American Staffordshire/Yellow Lab mix that is a very good girl! Coraline is great with other dogs and would be best in a home with older children because of her energy. She is super...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="images/76.jpg"/>
+                        </div>
+                        <div class="card-info">
+                            <h3>Volunteer Meeting 03/13/2022</h3>
+                            <p>When: Sunday, March 13, 2022 Time: 10am-11am Where: Animal House Shelter (in the front lobby), 13005 Ernesti Road, Huntley, IL What: Join us for an overview of volunteer opportunities at Animal House Shelter. Also meet with current volunteers and staff. Can't wait for...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img-wrapper">
+                            <img src="images/78.jpg"/>
+                        </div>
+                        <div class="card-info">
+                            <h3>Shamrock Run 3/19/2022</h3>
+                            <p>Proceeds support Animal House Shelter Date: March 19, 2022 Where: Busse Woods, Elk Grove Village Time: Paw-ticipants start 8:00am • Human only start 1:00pm Sign up for the Lucky Dog Run with your dog at...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </section> 
+    <section>
+        <div class="AdoptaPet">
+            <div class="container3">
+                <div class="row">
+                    <div class="title">
+                        <h1>Adopt a Pet</h1>
+                        <p>Our rehabilitated and healthy pets are matched up with the right owners to find Forever Homes. Are you our next hero?</p>
+                    </div>
+                </div>
+                <div class="Tcard">
+                    <div class="card1">
+                        <div class="image-section">
+                            <img src="images/20.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Adoption Programme</h3>
+                            <h4>Learn how you can adopt a pet</h4>
+                            <p>Our rehabilitated and healthy pets are matched up with the right owners to find Forever Homes. Are you our next hero?</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="image-section">
+                            <img src="images/26.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Foster Programme</h3>
+                            <h4>Learn how you can foster a pet</h4>
+                            <p>Foster homes plays a vital role in socializing and transitioning abandoned or abused pets. You can provide love and care for many pets.</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="image-section">
+                            <img src="images/1.jpg">
+                        </div>
+                        <div class="content">
+                            <h3>Happy Tails</h3>
+                            <h4>Pet Adoption Stories</h4>
+                            <p>Tell us the story of how you met your furry best friend and help other pet lovers discover the joys of pet adoption!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="title">
+                <h1>Donate Us</h1>
+                <div class="image">
+                    <img src="images/41.jpg">
+                </div>
+                <p>Help us save the lives of over 5,000 dogs and cats every year</p><br><br>
+                <button>
+                <a href="#">Donate Today</a>
+            </button><br><br>
+            </div>
+        </div>
+    </section>
+</body>
+
